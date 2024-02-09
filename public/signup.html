@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-con">
+        <img src="./images/logo.png" width="250" alt="logo" />
+      </div>
+      <div class="left">
+        <form action="/signup" method="post" class="form">
+          <div class="form-head-con">
+            <h1>Create an Account</h1>
+            <p>Lets get Started!</p>
+          </div>
+
+          <div class="form-input-con">
+            <label for="name" class="input-label">Name</label>
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-input-con">
+            <label for="email" class="input-label">Email</label>
+            <input
+              name="email"
+              type="text"
+              placeholder="Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-input-con">
+            <label for="password" class="input-label">Password</label>
+            <input
+              name="password"
+              type="password"
+              placeholder="Password"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <div class="btn-con">
+            <button type="submit" class="btn">Sign up</button>
+          </div>
+
+          <div>
+            <p>
+              Already have an Account?<a
+                class="login-link"
+                href="/login.html"
+                >Login</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="right"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toast">Logged out sucessfully</div>
+    <div class="container">
+      <div class="img-con">
+        <img src="./images/logo.png" width="250" alt="logo" />
+      </div>
+      <div class="left">
+        <form action="/login/pasword" method="post" class="form">
+          <div class="form-head-con text-center">
+            <h1>Login</h1>
+          </div>
+
+          <div class="form-input-con">
+            <label for="username" class="input-label">Email</label>
+            <input
+              id="username"
+              name="username"
+              type="text"
+              placeholder="Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-input-con">
+            <label for="password" class="input-label">Password</label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+              class="input-field"
+              required
+            />
+          </div>
+
+          <div class="btn-con">
+            <button id="login-btn" type="submit" class="btn">
+              Login in
+            </button>
+          </div>
+
+          <div>
+            <p>
+              Dont have an Account?<a
+                class="login-link"
+                href="/signup.html"
+                >Sign up</a
+              >
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="right"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

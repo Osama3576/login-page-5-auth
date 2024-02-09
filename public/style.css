@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+@media (max-width: 84em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .right {
+    display: none;
+  }
+}
+
+.left {
+  width: 100%;
+  background-color: #1c1c39;
+  box-shadow: 10px 0 30px rgba(0, 0, 0, 0.8);
+  height: 100%;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  width: 100%;
+  background-image: url('./images/bg-right.png');
+  height: 100%;
+  background-size: cover;
+}
+
+.form {
+  max-width: 25rem;
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.form-head-con {
+  margin-bottom: 2rem;
+}
+
+.form-input-con {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.input-label {
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  background-color: #1c1c39;
+  padding: 3px;
+}
+
+.input-field {
+  background-color: transparent;
+  border: 1px solid white;
+  width: 100%;
+  padding: 1rem 1rem;
+  color: white;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 100%;
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  color: white;
+  background-color: #4f46e5;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #6366f1;
+}
+
+.btn-con {
+  margin-bottom: 2rem;
+}
+
+.login-link {
+  color: white;
+  padding-left: 6px;
+}
+
+.img-con {
+  position: absolute;
+  z-index: 100;
+  top: 3rem;
+  left: 9rem;
+}
+
+@media (max-width: 84em) {
+  .img-con {
+    left: 3.5rem;
+  }
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 16px;
+  position: fixed;
+  z-index: 200;
+  left: 50%;
+  top: 30px;
+}
+
+#toast.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    top: 0;
+    opacity: 0;
+  }
+  to {
+    top: 30px;
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    top: 30px;
+    opacity: 1;
+  }
+  to {
+    top: 0;
+    opacity: 0;
+  }
+}
