@@ -39,8 +39,7 @@ app.use(passport.session());
 
 mongoose.set('strictQuery', true);
 
-mongoose.connect(
-  'mongodb+srv://codegeeks143:codegeeks@cluster0.3nurr8e.mongodb.net/logindb4?retryWrites=true',
+mongoose.connect('your url',
   err => {
     if (err) console.log(err);
     console.log('connection successful to Mongo db');
